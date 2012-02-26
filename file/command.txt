@@ -1,0 +1,81 @@
+Last login: Sun Feb 26 18:43:40 on ttys002
+imai-kenta-no-iMac:~ imacpepe$ cd Documents/
+imai-kenta-no-iMac:Documents imacpepe$ cd workspace/
+imai-kenta-no-iMac:workspace imacpepe$ cd hac_hacker/
+imai-kenta-no-iMac:hac_hacker imacpepe$ git init
+Initialized empty Git repository in /Users/imacpepe/Documents/workspace/hac_hacker/.git/
+imai-kenta-no-iMac:hac_hacker imacpepe$ vim README
+imai-kenta-no-iMac:hac_hacker imacpepe$ git add .
+imai-kenta-no-iMac:hac_hacker imacpepe$ git commit -m 
+error: switch `m' requires a value
+usage: git commit [options] [--] <filepattern>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit hook
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+imai-kenta-no-iMac:hac_hacker imacpepe$ git commit -m 'first commit'
+[master (root-commit) 3e5545f] first commit
+ 11 files changed, 335 insertions(+), 0 deletions(-)
+ create mode 100644 .DS_Store
+ create mode 100644 .classpath
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 README
+ create mode 100644 bin/Framemake.class
+ create mode 100644 bin/main$1.class
+ create mode 100644 bin/main.class
+ create mode 100644 file/main.java
+ create mode 100644 src/Framemake.java
+ create mode 100644 src/main.java
+imai-kenta-no-iMac:hac_hacker imacpepe$ vim ~/.ssh/config 
+imai-kenta-no-iMac:hac_hacker imacpepe$ git remote add origin github.com:henteko/hac_hacker.git
+imai-kenta-no-iMac:hac_hacker imacpepe$ git push
+Identity added: /Users/imacpepe/.ssh/github/github_id_rsa (/Users/imacpepe/.ssh/github/github_id_rsa)
+No refs in common and none specified; doing nothing.
+Perhaps you should specify a branch such as 'master'.
+fatal: The remote end hung up unexpectedly
+error: failed to push some refs to 'github.com:henteko/hac_hacker.git'
+imai-kenta-no-iMac:hac_hacker imacpepe$ git push origin masterCounting objects: 16, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (16/16), 6.20 KiB, done.
+Total 16 (delta 0), reused 0 (delta 0)
+To github.com:henteko/hac_hacker.git
+ * [new branch]      master -> master
+imai-kenta-no-iMac:hac_hacker imacpepe$ 
