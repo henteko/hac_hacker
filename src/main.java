@@ -35,13 +35,16 @@ public class main {
 
 		// ランダム生成
 		Random random = new Random();
+		//画面サイズ取得
+		java.awt.GraphicsEnvironment env = java.awt.GraphicsEnvironment.getLocalGraphicsEnvironment();
+		java.awt.Rectangle desktopBounds = env.getMaximumWindowBounds();
 
 		int x, y, w, h;
 		do {
-			x = random.nextInt(500);
+			x = random.nextInt(desktopBounds.width);
 		} while (x < 0);
 		do {
-			y = random.nextInt(500);
+			y = random.nextInt(desktopBounds.height);
 		} while (y < 0);
 		do {
 			w = random.nextInt(600);
