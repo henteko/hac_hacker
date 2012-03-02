@@ -18,7 +18,7 @@ public class main {
 	public static int Command_count = 0;
 	public static int Command_MAX = 5;
 
-	public static String[] File_name = { "file/main.java" };
+	public static String[] File_name = { "file/code.java" , "file/code2.java" , "file/code3.java" };
 	public static String[] Command_name = { "file/command.txt",
 			"file/command2.txt", "file/command3.txt" };
 
@@ -142,8 +142,9 @@ public class main {
 				} else {
 					Connect_win = 0;
 					Connect_fail = 0;
+					Random random_file = new Random();
 					try {
-						FileReader f = new FileReader(File_name[0]);
+						FileReader f = new FileReader(File_name[random_file.nextInt(2)]);
 						BufferedReader b = new BufferedReader(f);
 						String s;
 						int i = 0;
